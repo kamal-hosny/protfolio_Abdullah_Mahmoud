@@ -1,3 +1,4 @@
+// import React
 import React, { useEffect, useState } from 'react'
 
 //  import Icons MUI
@@ -5,7 +6,7 @@ import WbSunnyOutlinedIcon from '@mui/icons-material/WbSunnyOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 
 export default function DarkMode() {
-  const [darkTheme, setDarkTheme] = useState("dark")
+  const [darkTheme, setDarkTheme] = useState(localStorage.getItem("currentDarkMode") ?? "light")
 
   useEffect(() => {
     if(darkTheme === "light"){

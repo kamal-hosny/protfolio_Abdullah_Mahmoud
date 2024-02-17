@@ -1,0 +1,156 @@
+/* Start landingPage */
+.landingPage{
+position: relative;
+}
+.landingPage .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landingPage .container .rectangle{
+    width: 100%;
+    height: 220px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+@media (min-width: 991px) {
+    .landingPage .container{
+        flex-direction: row;
+        height: calc(100vh - 94.9px);
+        align-items: center;
+        justify-content: space-around;
+        gap: 100px;
+    }
+    .landingPage .container .rectangle{
+        width: 30vw;
+        height: 100%;
+    }
+}
+/* ? Start image-info */
+.landingPage .container .image-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 991px) {
+    .landingPage .container .image-info{
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+/* ? End image-info */
+/* ? Start image */ 
+.landingPage .container .image-container{
+    width: 250px;
+    height: 250px;
+    background-color: var(--main-color-white);
+    border: 8px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 10px;
+} 
+.landingPage .container .image-container .image{
+    width: 200px;
+    height: 200px;
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--main-color-white);
+background-image: linear-gradient(180deg, var(--main-color-white) 0%, var(--main-color) 27%);
+
+} 
+.landingPage .container .image-container .image img{
+    width: 100%;
+    margin: -20px;
+} 
+@media (min-width: 991px) {
+    .landingPage .container .image-container{
+        margin-bottom: 120px;
+        width: 300px;
+        height: 300px;
+    }
+    .landingPage .container .image-container .image{
+        width: 250px;
+        height: 250px;
+    }
+}
+/* ? End image */
+
+/* ? Start info */
+.landingPage .container .info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+.landingPage .container .info-container .info{
+    color: var(--color-text-1);
+}
+.landingPage .container .info-container .info .name{
+
+}
+.landingPage .container .info-container .info .name span{
+
+}
+.landingPage .container .info-container .info .skills{
+    font-size: 30px;
+    color: var(--main-color);
+}
+@media (min-width: 991px) {
+    .landingPage .container .info-container{
+        text-align: start;
+    }
+    .landingPage .container .info-container .info .name span{
+        font-size: 10px;
+    }
+    .landingPage .container .info-container .info .name{
+        font-size: 20px;
+    }
+    .landingPage .container .info-container .info .skills{
+        font-size: 30px;
+    }
+}
+/* ? End info */
+/* ? Start social */
+.landingPage .container .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.landingPage .container .social a{
+    color: var(--main-color);
+    transition: var(--main-transition);
+}
+.landingPage .container .social a:hover{
+    color: var(--color-text-1);
+}
+.landingPage .container .social a .icon{
+    font-size: 30px;
+}
+@media (min-width: 991px) {
+    .landingPage .container .social{
+        flex-direction: column;
+        gap: 6px;
+    }
+    .landingPage .container .social a .icon{
+        font-size: 18px;
+    }
+}
+/* ? End social */
+
+
+/* End landingPage */

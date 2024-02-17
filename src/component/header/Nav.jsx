@@ -1,4 +1,6 @@
+// import React
 import React from 'react'
+// import Component
 import DarkMode from './DarkMode'
 
 export default function Nav() {
