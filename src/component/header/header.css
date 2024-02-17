@@ -1,0 +1,109 @@
+/* Start Header */
+.header {
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ? Start icon */
+.icon-logo{
+    width: 50px;
+    cursor: pointer;
+}
+.icon-logo img{
+    width: 100%;
+}
+/* ? End icon */
+/* ? Start Nav */
+.header .container .nav  {
+
+}
+.header .container .nav button.darkMode{
+height: 25px;
+padding: 5px;
+}
+
+@media (max-width: 991px) {
+    .header .container .nav {
+        display: none;
+    }
+}
+.header .container .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header .container .nav ul li {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* ? End Nav */
+.menu-darkmode{
+    display: flex;
+    gap: 15px;
+    flex-direction: row-reverse;
+}
+@media (min-width: 991px) {
+    .menu-darkmode {
+        display: none;
+    }
+}
+/* ? Start Menu */
+@media (min-width: 991px) {
+    .menu{
+        display: none;
+    }
+}
+.menu .hamburger {
+    cursor: pointer;
+}
+
+.menu .hamburger input {
+    display: none;
+}
+
+.menu .hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 2.5em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu .line {
+    fill: none;
+    stroke: rgb(99, 63, 206);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu .line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.menu .hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.menu .hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+/* ? End Menu */
+/* ? Start darkMode */
+button.darkMode{
+    all: unset;
+    cursor: pointer;
+}
+/* ? End darkMode */
+/* End Header */

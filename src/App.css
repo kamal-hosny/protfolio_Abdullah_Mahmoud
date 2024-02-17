@@ -31,7 +31,11 @@ body{
   
 }
 body.dark{
+  --main-color-white: #0f0d17;
+  --color-text-1: #ffffff;
 
+  background-color: var(--main-color-white);
+  color: var(--color-text-1);
 }
 a {
   text-decoration: none;
