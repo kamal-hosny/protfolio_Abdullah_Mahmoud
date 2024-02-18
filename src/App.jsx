@@ -14,7 +14,9 @@ function App() {
     <>
       <Header/>
       <LandingPage/>
+      <div className="container">
       <OurBestWork/>
+      </div>
       <Footer/>
     </>
   )
