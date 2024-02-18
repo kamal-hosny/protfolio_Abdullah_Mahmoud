@@ -5,6 +5,8 @@ import React ,{ useState } from 'react'
 // import Component
 import Header from './component/header/Header'
 import LandingPage from './component/landing page/LandingPage'
+import Footer from './component/footer/Footer'
+import OurBestWork from './component/Our best work/OurBestWork'
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
     <>
       <Header/>
       <LandingPage/>
+      <OurBestWork/>
+      <Footer/>
     </>
   )
 }

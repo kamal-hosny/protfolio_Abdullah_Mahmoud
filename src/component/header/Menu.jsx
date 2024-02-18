@@ -1,11 +1,15 @@
 // import React
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-export default function Menu() {
+export default function Menu({action}) {
+    const [check, setCheck] = useState(false)
+        action(check)
     return (
         <div className="menu">
             <label className="hamburger">
-                <input type="checkbox" />
+                <input checked={check} onClick={(event)=>{
+                    setCheck(event.target.checked)
+                }} type="checkbox" />
                 <svg viewBox="0 0 32 32">
                     <path
                         className="line line-top-bottom"

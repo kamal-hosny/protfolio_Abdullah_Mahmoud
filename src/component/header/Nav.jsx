@@ -8,8 +8,9 @@ export default function Nav() {
     <div className='nav'>
         <ul>
             <li>Home</li>
-            <li>My Works</li>
+            <li>Our Best Work</li>
             <li>Skills</li>
+            <li>My Works</li>
             <li>Our Testimonials</li>
             <DarkMode />
         </ul>
