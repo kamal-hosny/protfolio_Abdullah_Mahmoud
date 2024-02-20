@@ -1,4 +1,7 @@
 /* Start customerReviews */
+body.open .customerReviews{
+    filter: blur(5px);
+}
 .customerReviews{
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);

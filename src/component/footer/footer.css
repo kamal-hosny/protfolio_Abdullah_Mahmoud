@@ -1,4 +1,7 @@
 /* Start footer */
+body.open .footer{
+    filter: blur(5px);
+}
 .footer{
     position: relative;
     padding: 15px 0;

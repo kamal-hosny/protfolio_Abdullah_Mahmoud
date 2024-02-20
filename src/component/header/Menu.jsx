@@ -1,14 +1,17 @@
 // import React
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
-export default function Menu({action}) {
-    const [check, setCheck] = useState(false)
-        action(check)
+// import context
+import { MenuContext } from "../../context/MenuContext"
+
+
+export default function Menu() {
+    const { nav, setNav } = useContext(MenuContext)
     return (
         <div className="menu">
             <label className="hamburger">
-                <input checked={check} onClick={(event)=>{
-                    setCheck(event.target.checked)
+                <input checked={nav} onChange={(event)=>{
+                    setNav(event.target.checked)
                 }} type="checkbox" />
                 <svg viewBox="0 0 32 32">
                     <path

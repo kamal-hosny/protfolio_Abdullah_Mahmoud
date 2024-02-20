@@ -1,11 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
 
-export default function Nav2({how}) {
+// import context
+import { MenuContext } from "../../context/MenuContext"
 
-    console.log(how)
+export default function Nav2() {
+  const { nav, setNav } = useContext(MenuContext)
 
   return (
-    <div className={how === false ? "nav-2" : "nav-2 nav-2-out"}>
+    <div className={nav === false ? "nav-2 " : "nav-2 nav-2-out" }>
     <ul>
             <li>Home</li>
             <li>Our Best Work</li>

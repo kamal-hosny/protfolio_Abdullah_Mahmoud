@@ -38,6 +38,9 @@ body.dark{
   background-color: var(--main-color-white);
   color: var(--color-text-1);
 }
+body.open{
+  overflow: hidden;
+}
 a {
   text-decoration: none;
 }

@@ -5,6 +5,9 @@
 }
 
 /* Start OurBestWork */
+body.open .OurBestWork{
+    filter: blur(5px);
+}
 .OurBestWork{
 
     padding-top: var(--main-padding-top);

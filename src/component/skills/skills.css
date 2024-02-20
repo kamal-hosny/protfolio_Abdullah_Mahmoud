@@ -1,4 +1,7 @@
 /* Start skills */
+body.open .skills{
+    filter: blur(5px);
+}
 .skills{
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);

@@ -1,4 +1,7 @@
 /* Start landingPage */
+body.open .landingPage{
+    filter: blur(5px);
+}
 .landingPage{
 position: relative;
 }
