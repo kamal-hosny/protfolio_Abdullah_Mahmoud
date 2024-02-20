@@ -5,7 +5,7 @@ import React from 'react'
 
 // ? import External libraries
 // import Swiper core and required modules
-import { Navigation, Pagination } from 'swiper/modules';
+import {  Pagination , Autoplay } from 'swiper/modules';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -28,13 +28,15 @@ const myCustomers = [
         name: "عبدالله الديزاينر",
         img: "../../../public/images/pic.png",
         stars: 5,
+        imgProject: "../../../public/images/goo.jpg",
     },
     {
         id: 2,
-        paragraph: "let him cook",
+        paragraph: "let him cooklet him cooklet him cooklet him cooklet him cooklet him cook",
         name: "yuta",
         img: "../../../public/images/shapes/Our best work/test-1.jpg",
         stars: 3,
+        imgProject: "../../../public/images/goo.jpg",
     },
     {
         id: 3,
@@ -42,6 +44,7 @@ const myCustomers = [
         name: "محهول",
         img: null,
         stars: 1,
+        imgProject: "../../../public/images/goo.jpg",
     },
     {
         id: 4,
@@ -49,13 +52,15 @@ const myCustomers = [
         name: "عبدالله الديزاينر",
         img: "../../../public/images/pic.png",
         stars: 5,
+        imgProject: "../../../public/images/test.jpg",
     },
     {
         id: 5,
-        paragraph: "let him cook",
+        paragraph: "let him cooklet him cooklet him cooklet him cooklet him cooklet him cook",
         name: "yuta",
         img: "../../../public/images/shapes/Our best work/test-1.jpg",
         stars: 3,
+        imgProject: "../../../public/images/goo.jpg",
     },
     {
         id: 6,
@@ -63,6 +68,7 @@ const myCustomers = [
         name: "محهول",
         img: null,
         stars: 1,
+        imgProject: null,
     },
 ]
 
@@ -74,13 +80,12 @@ export default function CustomerReviews() {
             <div className="container">
                 <Swiper
                 className="swiper"
-                    modules={[Pagination, Navigation]}
+                    modules={[Pagination, Autoplay ]}
                     spaceBetween={10}
                     slidesPerView={1}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     pagination={true}
-                    navigation
                     breakpoints={{
                         768: {
                           slidesPerView: 3,
@@ -89,6 +94,8 @@ export default function CustomerReviews() {
                           slidesPerView: 2,
                         },
                       }}
+                      loop={true}
+                      autoplay={{ delay: 2500, disableOnInteraction: false }}
                 >
                     {myCustomers.map((x) => {
                         return(
@@ -103,8 +110,12 @@ export default function CustomerReviews() {
                                     {Array.from({ length: x.stars }, (_, index) => (
                                         <StarIcon key={index} className="icon" />
                                     ))}
-                                    </div>
+                                    </div>  
                                     <p>{x.paragraph}</p>
+                                    {
+                                        x.imgProject !== null ?<div className="img-project"><img  src={x.imgProject} alt="" /></div> : <></>
+                                    }
+
                                 </div>
                             </SwiperSlide>
                         )
