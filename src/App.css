@@ -19,8 +19,8 @@
   --color-text-1: #2f2f2f;
   --color-text-2: #7f858f;
   --main-transition:0.3s;
-  --main-padding-top: 70px;
-  --main-padding-bottom: 70px;
+  --main-padding-top: 35px;
+  --main-padding-bottom: 35px;
 }
 /* ! End Variables **/
 
@@ -33,6 +33,7 @@ body{
 body.dark{
   --main-color-white: #0f0d17;
   --color-text-1: #ffffff;
+  --color-text-2: #79808a;
 
   background-color: var(--main-color-white);
   color: var(--color-text-1);
@@ -114,4 +115,9 @@ ul {
   .mainTitle .shapes {
       width: 70px;
   }
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after ,
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: var(--main-color);
 }

@@ -1,7 +1,16 @@
-import React from 'react'
+// CSS Style
+import "./skills.css";
+// import React
+import React from "react";
+import MainTitle from "../MainTitle";
+
 
 export default function Skills() {
   return (
-    <div>Skills</div>
-  )
+    <div className="skills">
+      <MainTitle title="Skills" />
+      <div className="container">
+      </div>
+    </div>
+  );
 }

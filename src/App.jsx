@@ -7,6 +7,8 @@ import Header from './component/header/Header'
 import LandingPage from './component/landing page/LandingPage'
 import Footer from './component/footer/Footer'
 import OurBestWork from './component/Our best work/OurBestWork'
+import Skills from './component/skills/Skills'
+import CustomerReviews from './component/customer reviews/CustomerReviews'
 
 function App() {
 
@@ -14,9 +16,9 @@ function App() {
     <>
       <Header/>
       <LandingPage/>
-      <div className="container">
       <OurBestWork/>
-      </div>
+      <Skills/>
+      <CustomerReviews/>
       <Footer/>
     </>
   )
