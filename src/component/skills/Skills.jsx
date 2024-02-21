@@ -32,30 +32,51 @@ export default function Skills() {
   const [skills, setSkills] = useState([...mySkills]);
 
   useEffect(() => {
-    const progress = setInterval(() => {
-      setSkills((prevSkills) => {
-        const updatedSkills = prevSkills.map((skill) => {
-          const newStartValue = skill.startValue + 1;
-          return newStartValue <= skill.percentage
-            ? { ...skill, startValue: newStartValue }
-            : skill;
-        });
+    const handleScroll = () => {
+      if (window.scrollY > 700) {
+        const intervalDuration = 100; // Adjust as needed
+        const percentageIncreasePerInterval = 1; // Adjust as needed
 
-        // Check if all skills have reached their percentage
-        const allSkillsComplete = updatedSkills.every(
-          (skill) => skill.startValue > skill.percentage
-        );
+        const progress = setInterval(() => {
+          setSkills((prevSkills) => {
+            const updatedSkills = prevSkills.map((skill) => {
+              const newStartValue = Math.min(
+                skill.startValue + percentageIncreasePerInterval,
+                skill.percentage
+              );
 
-        if (allSkillsComplete) {
-          clearInterval(progress);
-        }
+              return {
+                ...skill,
+                startValue: newStartValue,
+              };
+            });
 
-        return updatedSkills;
-      });
-    }, 50);
+            // Check if all skills have reached their percentage
+            const allSkillsComplete = updatedSkills.every(
+              (skill) => skill.startValue >= skill.percentage
+            );
 
-    return () => clearInterval(progress);
-  }, []);
+            if (allSkillsComplete) {
+              clearInterval(progress);
+            }
+
+            return updatedSkills;
+          });
+        }, intervalDuration);
+
+        return () => clearInterval(progress);
+      }
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array ensures the effect runs only once
+
 
   return (
     <div className="skills">

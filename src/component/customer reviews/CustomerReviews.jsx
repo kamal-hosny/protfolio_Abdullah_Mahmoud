@@ -83,8 +83,8 @@ export default function CustomerReviews() {
                     modules={[Pagination, Autoplay ]}
                     spaceBetween={10}
                     slidesPerView={1}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log('slide change')}
+                    // onSwiper={(swiper) => console.log(swiper)}
                     pagination={true}
                     breakpoints={{
                         768: {
