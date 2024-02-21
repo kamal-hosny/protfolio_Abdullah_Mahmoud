@@ -24,14 +24,14 @@ import { Navigation } from 'swiper/modules';
  
     {
       id: 2,
-      ball: "../../../public/images/shapes/Our best work/ball-1.svg",
+      ball: "../../../public/images/shapes/Our best work/ball-2.svg",
       imgIcon: "../../../public/images/shapes/Our best work/graphic-2.svg",
       imgProject: "../../../public/images/shapes/Our best work/test-1.jpg"
     },
  
     {
       id: 3,
-      ball: "../../../public/images/shapes/Our best work/ball-1.svg",
+      ball: "../../../public/images/shapes/Our best work/ball-3.svg",
       imgIcon: "../../../public/images/shapes/Our best work/graphic-3.svg",
       imgProject: "../../../public/images/shapes/Our best work/test-1.jpg"
     },

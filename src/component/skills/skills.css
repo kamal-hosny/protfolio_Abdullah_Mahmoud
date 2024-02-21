@@ -7,6 +7,49 @@ body.open .skills{
     padding-bottom: var(--main-padding-bottom);
 }
 .skills .container{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills .container .cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.skills .container .cards .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.skills .container .cards .circular-progress{
+    position: relative;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    /* background-image: conic-gradient(var(--main-color-white) 3.6deg, #ededed 0deg); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills .container .cards .circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: var(--main-color-white);
+}
+.skills .container .cards .circular-progress .progress-value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #7d2ae8;
+}
+.skills .container .cards  .test{
+    font-size: 22px;
+    font-weight: 600;
 }
 /* End skills */
