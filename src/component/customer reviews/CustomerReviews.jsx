@@ -26,9 +26,9 @@ const myCustomers = [
         id: 1,
         paragraph: "The designer, Abdullah Mahmoud holds a training certificate with an excellence degree recognized by Adobe",
         name: "عبدالله الديزاينر",
-        img: "../../../public/images/pic.png",
+        img: "images/pic.png",
         stars: 5,
-        imgProject: "../../../public/images/goo.jpg",
+        imgProject: "/images/goo.jpg",
     },
     {
         id: 2,
@@ -45,30 +45,6 @@ const myCustomers = [
         img: null,
         stars: 1,
         imgProject: "/images/goo.jpg",
-    },
-    {
-        id: 4,
-        paragraph: "The designer, Abdullah Mahmoud holds a training certificate with an excellence degree recognized by Adobe",
-        name: "عبدالله الديزاينر",
-        img: "/images/pic.png",
-        stars: 5,
-        imgProject: "/images/test.jpg",
-    },
-    {
-        id: 5,
-        paragraph: "let him cooklet him cooklet him cooklet him cooklet him cooklet him cook",
-        name: "yuta",
-        img: "/images/shapes/Our best work/test-1.jpg",
-        stars: 3,
-        imgProject: "/images/goo.jpg",
-    },
-    {
-        id: 6,
-        paragraph: "جميل",
-        name: "محهول",
-        img: null,
-        stars: 1,
-        imgProject: null,
     },
 ]
 
