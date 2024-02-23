@@ -23,11 +23,64 @@
   --main-padding-bottom: 35px;
 }
 /* ! End Variables **/
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+
+}
+body.dark{
+  --main-color-white: #0f0d17;
+  --color-text-1: #ffffff;
+  --color-text-2: #79808a;
+
+  background-color: var(--main-color-white);
+  color: var(--color-text-1);
+}
+body.open{
+  overflow: hidden;
+}
+body.purple{
+  --main-color: #6b3df5 ;
+}
+body.yellow{
+  --main-color: #dec11a ;
+}
+body.blue{
+  --main-color: #0dbab0 ;
+}
+body.purple.dark{
+  --main-color-white: rgb(15, 13, 23) ;
+  --main-color: #6b3df5 ;
+  background-color: var(--main-color-white);
+}
+body.yellow.dark{
+  --main-color-white: #17160d ; 
+  --main-color: #dec11a ;
+  background-color: var(--main-color-white);
+}
+body.blue.dark{
+  --main-color-white: #0d1715 ;
+  --main-color: #0dbab0 ;
+  background-color: var(--main-color-white);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding-top: 60px ;
+  padding-bottom: 60px ;
+  margin: 0;
+  padding: 0;
+}
+
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: var(--main-color) #ffffff;
+    scrollbar-color: #0f0d17 #ffffff;
   }
 
   /* Chrome, Edge, and Safari */
@@ -45,40 +98,16 @@
     border: 3px dashed #ffffff;
   }
   
-html{
-  scroll-behavior: smooth;
-}
-body{
-  
-}
-body.dark{
-  --main-color-white: #0f0d17;
-  --color-text-1: #ffffff;
-  --color-text-2: #79808a;
 
-  background-color: var(--main-color-white);
-  color: var(--color-text-1);
-}
-body.open{
-  overflow: hidden;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-  padding-top: 60px ;
-  padding-bottom: 60px ;
-  margin: 0;
-  padding: 0;
-}
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-
+.none{
+  display: none;
+}
 /* Small */
 @media (min-width: 768px) {
   .container {

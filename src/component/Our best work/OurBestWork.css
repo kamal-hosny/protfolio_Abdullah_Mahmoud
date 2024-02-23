@@ -1,11 +1,10 @@
 
+.OurBestWork .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
 .OurBestWork .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     position: absolute;
-    top: 50%;
+    top: 0px;
 }
-.OurBestWork .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
-    display: none;
-} 
+
 
 /* Start OurBestWork */
 body.open .OurBestWork{
@@ -35,11 +34,30 @@ body.open .OurBestWork{
     width: 100%;
     padding: 40px 0 0;
     overflow: hidden;
+    
+}
+@media (max-width:991px) {
+    .OurBestWork .swiper .swiper-slide .content{
+        padding: 48px 0 30px;
+    }
+}
+@media (max-width:768px) {
+    .OurBestWork .swiper .swiper-slide .content{
+        padding: 48px 0 30px;
+    }
+}
+@media (min-width:991px) {
+    .OurBestWork .swiper .swiper-slide .content{
+        padding: 80px 0 50px;
+    }
+    
 }
 /* ?  left */
 .OurBestWork .swiper .swiper-slide .content .left{
     width: 49%;
     position: relative;
+    /* padding: 40px 0; */
+
 }
 .OurBestWork .swiper .swiper-slide .content .left .ball{
     position: absolute;
@@ -50,6 +68,11 @@ body.open .OurBestWork{
     z-index: 9;
     transition: var(--main-transition);
 }
+@media (max-width:768px) {
+    .OurBestWork .swiper .swiper-slide .content .left .ball{
+        right: -80px;
+    }
+}
 .OurBestWork .swiper .swiper-slide .content .left .ball img{
     transition: 0.5s;
     width: 100%;
@@ -58,21 +81,32 @@ body.open .OurBestWork{
 
 
 }
-.OurBestWork .swiper .swiper-slide .content .left:hover .ball img{
-    transform: rotate(-180deg);
-}
+
 
 .OurBestWork .swiper .swiper-slide .content .left .img-icon{
     position: relative;
-    height: 300px;
-    width: 300px;
-    left: -140px;
+    height: 450px;
+    width: 450px;
+    left: -170px;
     transition: 0.5s;
-    z-index: 20;;
+    z-index: 20;
 }
-.OurBestWork .swiper .swiper-slide .content .left:hover .img-icon{
-    transform: rotate(-180deg);
+@media (max-width:991px) {
+    .OurBestWork .swiper .swiper-slide .content .left .img-icon{
+        height: 300px;
+        width: 300px;
+        left: -120px;
+    }
+    
 }
+@media (max-width:768px) {
+    .OurBestWork .swiper .swiper-slide .content .left .img-icon{
+        height: 150px;
+        width: 150px;
+        left: -50px;
+    }
+}
+
 .OurBestWork .swiper .swiper-slide .content .left .img-icon img{
     position: absolute;
     width: 100%;
@@ -92,4 +126,69 @@ body.open .OurBestWork{
     width: 100%;
 }
 /* ?End swiper */
+
+.OurBestWork .swiper-slide {
+    transition: opacity 0.5s ease ;
+    opacity: 0 !important;
+  }
+  
+.OurBestWork  .swiper-slide-active {
+    opacity: 1 !important;
+  }
+  
 /* End OurBestWork */
+
+/* ? Start animation */
+.OurBestWork .swiper-slide-next .content .left .img-icon,
+.OurBestWork .swiper-slide-next .content .left .ball img{
+    transform: rotate(360deg);
+}
+.OurBestWork .swiper-slide-prev .content .left .img-icon,
+.OurBestWork .swiper-slide-prev .content .left .ball img{
+    transform: rotate(-360deg);
+}
+/* ? End animation */
+
+/* .OurBestWork .swiper-button-next {
+    background-image: url(../../../public/images/shapes/1x/right-arrow-dark.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+   */
+
+
+/* ? Start change arrow */
+    .OurBestWork .swiper-button-next,
+    .OurBestWork .swiper-button-prev {
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+  }
+  .OurBestWork .swiper-button-next::after,
+  .OurBestWork .swiper-button-prev::after {
+    display: none;
+  }
+  /* next */
+  body.purple .OurBestWork .swiper-button-next,
+  body.purple .OurBestWork .swiper-button-prev {
+    background-image: url(../../../public/images/shapes/1x/right-arrow-purple.png);
+  }
+  body.yellow .OurBestWork .swiper-button-next,
+  body.yellow .OurBestWork .swiper-button-prev {
+    background-image: url(../../../public/images/shapes/1x/right-arrow-yellow.png);
+  }
+  body.blue .OurBestWork .swiper-button-next,
+  body.blue .OurBestWork .swiper-button-prev {
+    background-image: url(../../../public/images/shapes/1x/right-arrow\-blue.png);
+  }
+
+    /* prev */
+  body.purple .OurBestWork .swiper-button-prev,
+  body.yellow .OurBestWork .swiper-button-prev,
+  body.blue .OurBestWork .swiper-button-prev {
+    rotate: 180deg;
+  }
+  /* ? End change arrow */
