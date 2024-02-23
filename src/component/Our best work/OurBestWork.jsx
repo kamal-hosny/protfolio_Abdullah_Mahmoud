@@ -16,24 +16,24 @@ import { Navigation, EffectFade} from 'swiper/modules';
   const myProjects = [
     {
       id: 1,
-      ball: "../../../public/images/shapes/Our best work/ball-1.svg",
-      imgIcon: "../../../public/images/shapes/Our best work/graphic-1.svg",
-      imgProject: "../../../public/images/shapes/Our best work/test-1.jpg",
+      ball: "/images/shapes/Our best work/ball-1.svg",
+      imgIcon: "/images/shapes/Our best work/graphic-1.svg",
+      imgProject: "/images/shapes/Our best work/test-1.jpg",
 
     },
 
     {
       id: 2,
-      ball: "../../../public/images/shapes/Our best work/ball-2.svg",
-      imgIcon: "../../../public/images/shapes/Our best work/graphic-2.svg",
-      imgProject: "../../../public/images/shapes/Our best work/test-1.jpg"
+      ball: "/images/shapes/Our best work/ball-2.svg",
+      imgIcon: "/images/shapes/Our best work/graphic-2.svg",
+      imgProject: "/images/shapes/Our best work/test-1.jpg"
     },
  
     {
       id: 3,
-      ball: "../../../public/images/shapes/Our best work/ball-3.svg",
-      imgIcon: "../../../public/images/shapes/Our best work/graphic-3.svg",
-      imgProject: "../../../public/images/shapes/Our best work/test-1.jpg"
+      ball: "/images/shapes/Our best work/ball-3.svg",
+      imgIcon: "/images/shapes/Our best work/graphic-3.svg",
+      imgProject: "/images/shapes/Our best work/test-1.jpg"
     },
  
   ]

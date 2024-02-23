@@ -44,23 +44,23 @@ const myCustomers = [
         name: "محهول",
         img: null,
         stars: 1,
-        imgProject: "../../../public/images/goo.jpg",
+        imgProject: "/images/goo.jpg",
     },
     {
         id: 4,
         paragraph: "The designer, Abdullah Mahmoud holds a training certificate with an excellence degree recognized by Adobe",
         name: "عبدالله الديزاينر",
-        img: "../../../public/images/pic.png",
+        img: "/images/pic.png",
         stars: 5,
-        imgProject: "../../../public/images/test.jpg",
+        imgProject: "/images/test.jpg",
     },
     {
         id: 5,
         paragraph: "let him cooklet him cooklet him cooklet him cooklet him cooklet him cook",
         name: "yuta",
-        img: "../../../public/images/shapes/Our best work/test-1.jpg",
+        img: "/images/shapes/Our best work/test-1.jpg",
         stars: 3,
-        imgProject: "../../../public/images/goo.jpg",
+        imgProject: "/images/goo.jpg",
     },
     {
         id: 6,
@@ -101,9 +101,9 @@ export default function CustomerReviews() {
                         return(
                             <SwiperSlide key={x.id} className="swiper-slide">
                                 <div className="card">
-                                    <img className="quote" src="/public/images/shapes/1x/quotes.png" alt="" />
+                                    <img className="quote" src="/images/shapes/1x/quotes.png" alt="" />
                                     <div className="image">
-                                        <img src={x.img !== null ? x.img: "/public/images/avatar_male.webp"} alt="" />
+                                        <img src={x.img !== null ? x.img: "/images/avatar_male.webp"} alt="" />
                                     </div>
                                     <h3>{x.name}</h3>
                                     <div className="stars">
