@@ -172,23 +172,24 @@ body.open .OurBestWork{
     display: none;
   }
   /* next */
-  body.purple .OurBestWork .swiper-button-next,
-  body.purple .OurBestWork .swiper-button-prev {
-    background-image: url(images/shapes/1x/right-arrow-purple.png);
+  body.purple .OurBestWork .swiper-button-next{
+    background-image: url(/images/shapes/1x/right-arrow-purple.png);
   }
-  body.yellow .OurBestWork .swiper-button-next,
-  body.yellow .OurBestWork .swiper-button-prev {
+  body.yellow .OurBestWork .swiper-button-next{
     background-image: url(/images/shapes/1x/right-arrow-yellow.png);
   }
-  body.blue .OurBestWork .swiper-button-next,
-  body.blue .OurBestWork .swiper-button-prev {
+  body.blue .OurBestWork .swiper-button-next{
     background-image: url(/images/shapes/1x/right-arrow\-blue.png);
   }
 
     /* prev */
-  body.purple .OurBestWork .swiper-button-prev,
-  body.yellow .OurBestWork .swiper-button-prev,
-  body.blue .OurBestWork .swiper-button-prev {
-    rotate: 180deg !important;
-  }
+    body.purple .OurBestWork .swiper-button-prev {
+        background-image: url(/images/shapes/1x/left-arrow-purple.png);
+    }
+    body.yellow .OurBestWork .swiper-button-prev{
+        background-image: url(/images/shapes/1x/left-arrow-yellow.png);
+    }
+    body.blue .OurBestWork .swiper-button-prev{
+        background-image: url(/images/shapes/1x/left-arrow\-blue.png);
+    }
   /* ? End change arrow */
