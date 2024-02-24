@@ -24,6 +24,7 @@ body.open .skills{
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+
 }
 .skills .container .cards .circular-progress{
     position: relative;

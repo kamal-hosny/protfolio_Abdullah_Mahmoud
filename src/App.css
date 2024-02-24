@@ -174,3 +174,28 @@ ul {
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     color: var(--main-color);
 }
+.whatsApp{
+  position: fixed;
+  right: 5%;
+  bottom: 2.5%;
+  background-color: var(--main-color);
+  border-radius: 100px;
+  z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.whatsApp a{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+  padding: 5px 10px ;
+  
+}
+.whatsApp p{
+  font-size: 15px;
+}
+.whatsApp .icon{
+
+}

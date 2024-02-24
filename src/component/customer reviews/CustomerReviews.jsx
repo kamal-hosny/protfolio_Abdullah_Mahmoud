@@ -51,7 +51,7 @@ const myCustomers = [
 
 export default function CustomerReviews() {
     return (
-        <div className="customerReviews">
+        <div className="customerReviews" id="customerReviews">
             <MainTitle title="Customer Reviews" />
             <div className="container">
                 <Swiper

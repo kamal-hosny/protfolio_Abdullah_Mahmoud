@@ -29,10 +29,30 @@ body.open .customerReviews{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(59, 111, 156);
+    background-color: var(--main-color-white);
     padding:38px 16px 16px;
     border-radius: 8px;
     margin-top: 30px;
+    border: 1px solid #dddddd;
+    transition: 0.3s;
+    z-index: 2;
+}
+ body.dark .customerReviews .container .swiper .swiper-slide .card::before{
+    content: "";
+    border-radius: 8px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+ body.dark .customerReviews .container .swiper .swiper-slide .card{
+    border: 1px solid #252525;
+}
+.customerReviews .container .swiper .swiper-slide .card:hover{
+    box-shadow: 2px 2px 30px 0px rgba(20, 20, 20, 0.1);
 }
 
 .customerReviews .container .swiper .swiper-slide .card .quote{
@@ -40,9 +60,11 @@ body.open .customerReviews{
     width: 20px;
     left: 10px;
     top: 10px;
-    opacity: 0.6;
+    opacity: 0.4;
 }
+
 .customerReviews .container .swiper .swiper-slide .card .image{
+    border: 1px solid #dddddd;
     position: absolute;
     top: -30px;
     left: 50%;
@@ -52,6 +74,9 @@ body.open .customerReviews{
     border-radius: 50%;
     overflow: hidden;
     background-color: rgb(17, 255, 0);
+}
+body.dark .customerReviews .container .swiper .swiper-slide .card .image{
+    border: 1px solid #252525;
 }
 .customerReviews .container .swiper .swiper-slide .card .image img{
     width: 100%;

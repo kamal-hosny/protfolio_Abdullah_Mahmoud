@@ -26,6 +26,12 @@ body.open .footer{
 .footer .container ul.links li:hover{
     color: var(--main-color);
 }
+@media (max-width: 576px) {
+    .footer .container ul.links{
+        gap: 0;
+        margin: 0;
+    }
+  }
 /* ? End links */
 /* ? Start social */
 .footer .container .social{

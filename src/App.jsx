@@ -9,6 +9,7 @@ import Footer from './component/footer/Footer'
 import OurBestWork from './component/Our best work/OurBestWork'
 import Skills from './component/skills/Skills'
 import CustomerReviews from './component/customer reviews/CustomerReviews'
+import WhatsApp from './component/WhatsApp'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Skills/>
       <CustomerReviews/>
       <Footer/>
+      <WhatsApp/>
     </>
   )
 }

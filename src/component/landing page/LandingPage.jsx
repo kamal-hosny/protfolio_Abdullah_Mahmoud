@@ -9,7 +9,7 @@ import { ReactTyped } from "react-typed";
 
 export default function LandingPage() {
     return (
-        <div className="landingPage">
+        <div className="landingPage" id="Home">
             <div className="container">
                 <span className="rectangle"></span>
 
