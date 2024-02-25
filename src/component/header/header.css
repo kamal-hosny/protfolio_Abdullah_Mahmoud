@@ -45,7 +45,6 @@ body.open .footer{
 /* ? End icon */
 /* ? Start Nav */
 .header .container .nav  {
-
 }
 
 .header .container .nav button.darkMode{
@@ -59,12 +58,22 @@ padding: 5px;
     }
 }
 .header .container .nav ul {
+    
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
-
+.header .container .nav ul div{
+    background-color: var(--main-color-white);
+    border: 2px solid var(--color-text-1);
+    border-radius: 100px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
 .header .container .nav ul li {
     cursor: pointer;
     font-size: 20px;

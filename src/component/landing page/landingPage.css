@@ -5,6 +5,76 @@ body.open .landingPage{
 .landingPage{
 position: relative;
 }
+/* ? Start  landingPage asset*/
+.landingPage img.asset{
+    position: absolute;
+    width: 50px;
+    top: 1px;
+    right: 1px;
+}
+
+@media (max-width: 991px) {
+    .landingPage img.asset{
+        display: none;
+    }
+}
+.landingPage img.asset-2-1{
+    top: 110px;
+    width: 100px;
+    left: 480px;
+    rotate: -80deg;
+    z-index: -1;
+}
+.landingPage img.asset-2-2{
+    top: 30px;
+    width: 80px;
+    right: 4%;
+    rotate: 20deg;
+}
+.landingPage img.asset-2-3{
+    top: -70px;
+    width: 80px;
+    left: 620px;
+    z-index: -1;
+}
+.landingPage img.asset-2-4{
+    top: 72%;
+    width: 50px;
+    left: 550px;
+    z-index: -1;
+}
+.landingPage img.asset-2-5{
+    top: -40px;
+    width: 50px;
+    right: 380px;
+    z-index: -1;
+}
+.landingPage img.asset-2-6{
+    top: 69%;
+    width: 55px;
+    left: 560px;
+
+}
+.landingPage img.asset-2-7{
+    top: -70px;
+    width: 60px;
+    right: 5%;
+    z-index: -1;
+}
+.landingPage img.asset-2-8{
+    top: 130px;
+    width: 20px;
+    left: 500px;
+    rotate: -80deg;
+    z-index: -2;
+}
+.landingPage img.asset-2-9{
+    top: 75%;
+    width: 25px;
+    right: 5%;
+    z-index: -1;
+}
+/* ? End  landingPage asset*/
 .landingPage .container{
     display: flex;
     flex-direction: column;
@@ -20,6 +90,99 @@ position: relative;
     left: 0;
     z-index: -1;
 }
+/* ? Start asset */
+
+.landingPage .container .rectangle img.asset-1{
+    top: -100px;
+    right: 1px;
+    rotate: 20deg;
+}
+.landingPage .container .rectangle img.asset-2{
+    top: -40px;
+    width: 15px;
+    right: 150px;
+    rotate: 25deg;
+}
+.landingPage .container .rectangle img.asset-3{
+    width: 30px;
+    left: 50px;
+    rotate: 30deg;
+    top: 70%;
+}
+.landingPage .container .rectangle img.asset-4{
+    width: 40px;
+    right: 0px;
+    rotate: 100deg;
+    top: 70px;
+}
+.landingPage .container .rectangle img.asset-5{
+    width: 40px;
+    right: 130px;
+    rotate: 30deg;
+    top: 170px;
+}
+.landingPage .container .rectangle img.asset-6{
+    width: 100px;
+    right: 200px;
+    rotate: 30deg;
+    top: 90px;
+}
+.landingPage .container .rectangle img.asset-7{
+    width: 30px;
+    left: 100px;
+    rotate: 30deg;
+    top: 90px;
+}
+.landingPage .container .rectangle img.asset-8{
+    width: 20px;
+    left: 100px;
+    rotate: 30deg;
+    top: 90%;
+}
+.landingPage .container .rectangle img.asset-9{
+    width: 50px;
+    right: 100px;
+    rotate: 30deg;
+    top: 65%;
+}
+.landingPage .container .rectangle img.asset-10{
+    width: 50px;
+    left: 40%;
+    rotate: 30deg;
+    top: 55%;
+}
+.landingPage .container .rectangle img.asset-11{
+    width: 50px;
+    left: 50%;
+    rotate: 30deg;
+    top: 40%;
+}
+.landingPage .container .rectangle img.asset-12{
+    width: 50px;
+    left: 5%;
+    rotate: 30deg;
+    top: -15%;
+}
+.landingPage .container .rectangle img.asset-13{
+    width: 50px;
+    left: 5%;
+    rotate: 30deg;
+    top: 40%;
+}
+.landingPage .container .rectangle img.asset-14{
+    width: 50px;
+    right: 5%;
+    rotate: 30deg;
+    top: 85%;
+}
+.landingPage .container .rectangle img.asset-15{
+
+    width: 20px;
+    right: 15%;
+    rotate: 30deg;
+    top: 5%;
+}
+/* ? End asset */
 @media (max-width: 991px) {
     .landingPage{
         padding-bottom: var(--main-padding-bottom);
@@ -115,6 +278,7 @@ position: relative;
 }
 .landingPage .container .info-container .info .skills{
     font-size: 30px;
+    padding: 0;
     color: var(--main-color);
 }
 @media (min-width: 991px) {

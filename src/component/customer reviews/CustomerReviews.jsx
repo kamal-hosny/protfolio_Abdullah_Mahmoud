@@ -20,6 +20,7 @@ import StarHalfIcon from '@mui/icons-material/StarHalf';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 //
 import MainTitle from "../MainTitle";
+import Button from "../Button";
 
 const myCustomers = [
     {
@@ -29,6 +30,7 @@ const myCustomers = [
         img: "images/pic.png",
         stars: 5,
         imgProject: "/images/goo.jpg",
+        link: "",
     },
     {
         id: 2,
@@ -37,6 +39,7 @@ const myCustomers = [
         img: "../../../public/images/shapes/Our best work/test-1.jpg",
         stars: 3,
         imgProject: "../../../public/images/goo.jpg",
+        link: null,
     },
     {
         id: 3,
@@ -45,6 +48,7 @@ const myCustomers = [
         img: null,
         stars: 1,
         imgProject: "/images/goo.jpg",
+        link: null,
     },
 ]
 
@@ -76,6 +80,7 @@ export default function CustomerReviews() {
                     {myCustomers.map((x) => {
                         return(
                             <SwiperSlide key={x.id} className="swiper-slide">
+                                <div className="box">
                                 <div className="card">
                                     <img className="quote" src="/images/shapes/1x/quotes.png" alt="" />
                                     <div className="image">
@@ -92,6 +97,9 @@ export default function CustomerReviews() {
                                         x.imgProject !== null ?<div className="img-project"><img  src={x.imgProject} alt="" /></div> : <></>
                                     }
 
+                                </div>
+                                {x.link !== null && <Button link={x.link}/> }
+                                
                                 </div>
                             </SwiperSlide>
                         )

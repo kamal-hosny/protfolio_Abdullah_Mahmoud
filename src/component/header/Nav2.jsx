@@ -14,30 +14,30 @@ export default function Nav2() {
   return (
     <div className={nav === false ? "nav-2 " : "nav-2 nav-2-out" }>
     <ul>
-    <li onClick={close}><Link 
+    <li ><Link 
           to="Home"
           spy={true}
           smooth={true}
-          offset={0}
-          duration={500} >Home</Link></li>
+          offset={-1000}
+          duration={500} onClick={close}>Home</Link></li>
         <li><Link 
           to="ourBestWork"
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}>Our Best Work</Link></li>
+          duration={500} onClick={close}>Our Best Work</Link></li>
         <li><Link 
           to="skills"
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}>Skills</Link></li>
+          duration={500} onClick={close}>Skills</Link></li>
         <li><Link 
           to="customerReviews"
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}>Customer Reviews</Link></li>
+          duration={500} onClick={close}>Customer Reviews</Link></li>
     </ul>
 </div>
   )

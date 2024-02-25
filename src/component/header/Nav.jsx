@@ -8,6 +8,7 @@ export default function Nav() {
   return (
     <div className='nav'>
       <ul>
+        <div>
         <li><Link 
           to="Home"
           spy={true}
@@ -31,7 +32,8 @@ export default function Nav() {
           spy={true}
           smooth={true}
           offset={0}
-          duration={500}>Skills</Link></li>
+          duration={500}>Customer Reviews</Link></li>
+          </div>
         <DarkMode />
       </ul>
     </div>

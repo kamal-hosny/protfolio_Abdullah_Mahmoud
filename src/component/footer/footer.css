@@ -31,6 +31,9 @@ body.open .footer{
         gap: 0;
         margin: 0;
     }
+    .footer .container ul.links li{
+        font-size: 14px;
+    }
   }
 /* ? End links */
 /* ? Start social */
