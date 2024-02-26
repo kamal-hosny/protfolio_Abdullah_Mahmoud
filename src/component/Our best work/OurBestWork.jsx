@@ -18,7 +18,7 @@ import { Navigation, EffectFade} from 'swiper/modules';
       id: 1,
       ball: "/images/shapes/Our best work/ball-1.svg",
       imgIcon: "/images/shapes/Our best work/graphic-1.svg",
-      imgProject: "/images/shapes/Our best work/test-1.jpg",
+      imgProject: "/images/shapes/Our best work/ZIRCONFinal.png",
 
     },
 
